@@ -1,0 +1,58 @@
+#Strings
+
+name: Hello World
+place: "Kochi"
+job: 'swe'
+
+# multiple line spanning data
+bio: |
+hello there.
+iam Clint.
+
+#writing a single line in multiple lines
+message: >
+This is a
+new line
+message.
+
+numbers: 6716
+marks: 12.12
+booleanValue: No # n, N, false, False, FALSE
+# Same for true -> yes, y, Y
+---
+#Specify the type 
+zero: !!int 0
+postiveNum: !!int 45
+negativeNum: !!int -45
+binaryNum: !!int 0b1101
+octalNum: !!int 06754
+hexa: !!int 0x45
+commaValue: !!int +540_000 #540,000
+exponent number: 2.32E12
+
+#Floating point
+marks: !!float 23.23
+infinite: !!float .inf
+not a number: .nan 
+
+#Boolean
+boole num: !!bool No
+
+#String
+msg: !!str Hello
+
+#Null
+
+dat1: !!null Null
+dat2: !!null null
+dat3: !!null ~
+
+~: Null key
+
+# Dates and time
+date: !!timestamp 2002-12-14
+indian time: 2001-12-15T02:59:43.10 +5:30
+no time zone: 2001-12-15T02:59:43.10
+
+
+

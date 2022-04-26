@@ -1,0 +1,21 @@
+"apple" : "Is Red"
+1 : "This is Clint"
+---
+
+#Lists
+- apple
+- mango
+- banana
+- Apple
+
+---
+#Block style
+cities:
+ - new delhi
+ - kochi
+ - mumbai
+---
+cities: [apple, jk]
+---
+{apple : "is apple", age : 12}
+...

@@ -1,0 +1,8 @@
+School:
+ - name: C-School # - Since array
+   principal: Clint
+   Students:
+   - rno: 12 # - Since array
+     name: Clins
+     marks: 98
+  

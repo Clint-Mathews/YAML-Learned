@@ -1,0 +1,15 @@
+{
+    "School":[
+        {
+        "name":"Clint's School",
+        "principal":"Clint",
+        "Student":[
+            {
+                "roll no":12,
+                "name": "hahah",
+                "marks": 76
+            }
+        ]
+    }
+]
+}

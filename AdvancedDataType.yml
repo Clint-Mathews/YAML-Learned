@@ -1,0 +1,78 @@
+student: !!seq
+ - name
+ - marks
+ - roll no
+#Can also do like below
+students1: [names, marks, rollno]
+#Sparse sequence with empty data
+sparse seq:
+ - a
+ - b
+ -
+ - Null
+ - sup
+---
+#Nested sequence
+
+-
+ - c1
+ - c2
+-
+ - c3
+ - c4
+
+---
+# Maps & nested maps
+
+name: Clint
+role:
+ age: 23
+ job: Student
+---
+# same as 
+name: Clint
+role: {age: 23, job:Student}
+
+---
+# Pair example
+pair example: !!pairs
+ - job: Student
+ - job: Teacher
+#Simillarly
+pair example2: !!pairs [job: student, job: teacher]
+
+---
+#Sets - unique values
+
+names: !!set
+ ? Clint
+ ? Clins
+ ? Appu
+
+---
+#Dictionary
+
+people: !!omap
+ - Clint:
+    name: Clint
+    age: 12
+    height: 23
+ - Kunal:
+    name: Kunal
+    age: 12
+    height: 12
+
+
+---
+liking: &like
+ fav: Blue
+ age: 10
+
+people:
+ name: Clint
+ <<: *like
+ 
+people1:
+ name: Clins
+ <<: *like
+ age: 30
